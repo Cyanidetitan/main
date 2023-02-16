@@ -11,7 +11,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from .. import app, ADMIN_CHATS, ForceDocumentFlag
 from .leech import initiate_torrent
 
-rsslink = list(filter(lambda x: x, map(str, os.environ.get("NYAA_RSS_LINKS", "").split(' '))))
+rsslink = list(filter(lambda x: x, map(str, os.environ.get("NYAA_RSS_LINKS", "https://nyaa.si/?page=rss&c=0_0&f=0&u=AkihitoSubsWeeklies").split(' '))))
 
 if os.environ.get('DB_URL'):
     DB_URL = 'mongodb+srv://auto:auto@cluster0.iqhle1n.mongodb.net/?retryWrites=true&w=majority'
