@@ -16,7 +16,7 @@ ADMIN_CHATS = os.environ.get('ADMIN_CHATS')
 ADMIN_CHATS = list(map(int, ADMIN_CHATS.split(' '))) if ADMIN_CHATS else [5700625607]
 ALL_CHATS = EVERYONE_CHATS + ADMIN_CHATS
 # LICHER_* variables are for @animebatchstash and similar, not required
-LICHER_CHAT = os.environ.get('LICHER_CHAT', '-1001258776101')
+LICHER_CHAT = os.environ.get('LICHER_CHAT', '-1001855239636')
 try:
     LICHER_CHAT = int(LICHER_CHAT)
 except ValueError:
