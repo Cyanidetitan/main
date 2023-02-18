@@ -144,7 +144,7 @@ async def _upload_worker(client, message, reply, torrent_info, user_id, flags, n
         first_index = thing
     asyncio.create_task(reply.edit_text(f'Download successful, files uploaded.\nFiles: {first_index.link}', disable_web_page_preview=True))
 
-async def _upload_file(LICHER_CHAT,client, message, reply, filename, filepath, force_document, newFile, count):
+async def _upload_file(client, message, reply, filename, filepath, force_document, newFile, count):
     if not os.path.getsize(filepath):
         return [(os.path.basename(filename), None)]
     worker_identifier = (reply.chat.id, reply.message_id)
